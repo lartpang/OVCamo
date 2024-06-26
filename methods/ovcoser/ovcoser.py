@@ -19,11 +19,10 @@ class ConvNeXtCLIP(nn.Module):
         model_name="convnext_large_d_320",
         pretrained="laion2b_s29b_b131k_ft_soup",
         template_set="camoprompts",
-        cache_dir=None,
     ):
         super().__init__()
         self.clip_model, _, self.preprocess_val = open_clip.create_model_and_transforms(
-            model_name, pretrained=pretrained, cache_dir=cache_dir
+            model_name, pretrained=pretrained
         )
         self.mean = OPENAI_DATASET_MEAN
         self.std = OPENAI_DATASET_STD

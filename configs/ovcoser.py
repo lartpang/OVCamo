@@ -5,25 +5,28 @@ base_seed = 112358
 log_interval = 20
 
 
-__BATCHSIZE = 4
-__NUM_EPOCHS = 30
+__BATCHSIZE = 2
+__NUM_EPOCHS = 50
 __NUM_ITERS = 0
 __EPOCH_BASED = True
 
 train = dict(
+    save_interval=-1,
     batch_size=__BATCHSIZE,
     num_workers=2,
     num_epochs=__NUM_EPOCHS,
     num_iters=__NUM_ITERS,
     epoch_based=__EPOCH_BASED,
+    use_amp=True,
     grad_acc_step=1,
-    lr=0.00003,
+    lr=0.00002,
     sche_usebatch=False,
     optimizer=dict(
         mode="adamw",
         group_mode="finetune",
+        set_to_none=True,
         cfg=dict(
-            weight_decay=0.0005,
+            weight_decay=0.0001,
             diff_factor=0.1,
         ),
     ),
