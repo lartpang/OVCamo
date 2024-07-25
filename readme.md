@@ -4,6 +4,9 @@
    <a href='https://arxiv.org/abs/2311.11241'>
       <img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red' alt='arXiv PDF'>
    </a>
+  <img src="https://img.shields.io/github/last-commit/lartpang/OVCamo">
+  <img src="https://img.shields.io/github/release-date/lartpang/OVCamo">
+
    <br/>
    <img src='https://github.com/lartpang/OVCamo/assets/26847524/d2c474f2-4bde-455c-af71-e0761e57a574' alt='logo'>
 </p>
@@ -49,7 +52,7 @@
 1. Download [the pretrained model](https://github.com/lartpang/OVCamo/releases/download/model-v1.0/model.pth).
 2. Run the script: `python .\main.py --config .\configs\ovcoser.py --model-name OVCoser --evaluate --load-from model.pth`.
 
-## Evaluate the Our Results
+## Evaluate Our Results
 
 1. Download [our results](https://github.com/lartpang/OVCamo/releases/download/model-v1.0/ovcoser-ovcamo-te.zip) and unzip it into `<path>/ovcoser-ovcamo-te`.
 2. Run the script: `python .\evaluate.py --pre <path>/ovcoser-ovcamo-te`
