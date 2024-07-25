@@ -39,6 +39,6 @@ train = dict(
 test = dict(
     batch_size=__BATCHSIZE,
     num_workers=2,
-    save_results=False,
+    save_results=True,
     input_hw=[384, 384],
 )

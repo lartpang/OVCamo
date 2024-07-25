@@ -49,6 +49,11 @@
 1. Download [the pretrained model](https://github.com/lartpang/OVCamo/releases/download/model-v1.0/model.pth).
 2. Run the script: `python .\main.py --config .\configs\ovcoser.py --model-name OVCoser --evaluate --load-from model.pth`.
 
+## Evaluate the Our Results
+
+1. Download [our results](https://github.com/lartpang/OVCamo/releases/download/model-v1.0/ovcoser-ovcamo-te.zip) and unzip it into `<path>/ovcoser-ovcamo-te`.
+2. Run the script: `python .\evaluate.py --pre <path>/ovcoser-ovcamo-te`
+
 ## LICENSE
 
 - Code: [MIT LICENSE](./LICENSE)

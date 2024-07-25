@@ -174,7 +174,7 @@ def test(model, cfg, metric_names=("sm", "wfm", "mae", "fm", "em", "iou")):
             gt_cls = gt_classes[idx_in_batch]
 
             if save_path:
-                ops.save_array_as_image(pred, save_name=pre_cls + "-" + mask_path.name, save_dir=save_path)
+                ops.save_array_as_image(pred, save_name=f"[{pre_cls}]{mask_path.name}", save_dir=save_path)
             metricer.step(
                 pre=(pred * 255).astype(np.uint8),
                 gt=mask,
