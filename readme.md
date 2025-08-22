@@ -22,12 +22,16 @@
 ```
 
 > [!note]
+> CAD dataset can be found at https://drive.google.com/file/d/1XhrC6NSekGOAAM7osLne3p46pj1tLFdI/view?usp=sharing
 >
 > Details of the proposed OVCamo dataset can be found in the document for [our dataset](https://github.com/lartpang/OVCamo/releases/download/dataset-v1.0/ovcamo.zip).
 
 ## Prepare Dataset
 
 ![image](https://github.com/lartpang/OVCamo/assets/26847524/92f5f7e8-55a9-4d7e-bc41-264d255af658)
+
+> [!note]
+> CAD subset can be found in 
 
 1. Prepare the training and testing splits: See the document in [our dataset](https://github.com/lartpang/OVCamo/releases/download/dataset-v1.0/ovcamo.zip) for details.
 2. Set the training and testing splits in the yaml file `env/splitted_ovcamo.yaml`:
